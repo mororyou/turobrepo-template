@@ -1,0 +1,15 @@
+{
+  "name": "@team-up/tailwind-config",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "license": "MIT",
+  "exports": {
+    ".": "./shared-styles.css",
+    "./postcss": "./postcss.config.js"
+  },
+  "devDependencies": {
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.5"
+  }
+}
