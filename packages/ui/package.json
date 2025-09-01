@@ -1,0 +1,36 @@
+{
+  "name": "@team-up/ui",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "license": "ISC",
+  "exports": {
+    "./styles.css": "./dist/index.css",
+    "./*": "./dist/*.js"
+  },
+  "scripts": {
+    "build:styles": "tailwindcss -i ./src/styles.css -o ./dist/index.css",
+    "build:components": "tsc",
+    "check-types": "tsc --noEmit",
+    "dev:styles": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
+    "dev:components": "tsc --watch",
+    "lint": "eslint src --max-warnings 0"
+  },
+  "dependencies": {
+    "react": "^19",
+    "react-dom": "^19"
+  },
+  "devDependencies": {
+    "@team-up/tailwind-config": "workspace:*",
+    "@team-up/eslint-config": "workspace:*",
+    "@team-up/typescript-config": "workspace:*",
+    "@tailwindcss/cli": "^4.1.5",
+    "@tailwindcss/postcss": "^4.1.5",
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.34.0",
+    "typescript": "^5.9.2",
+    "tailwindcss": "^4.1.5"
+  }
+}
