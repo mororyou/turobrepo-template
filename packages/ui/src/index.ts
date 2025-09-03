@@ -28,4 +28,4 @@ export * from './components/toggle';
 export * from './components/tooltip';
 
 export { useIsMobile } from './hooks/use-mobile';
-export { cn } from './libs/shadcn/utils';
+export { cn } from './libs/utils';
