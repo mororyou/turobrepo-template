@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/nextjs'
-import { Button } from '@team-up/ui/components/button'
+import { Button } from '@repo/ui/components/button'
 
 const meta = {
   title: 'Design System/UI/Button',
