@@ -7,7 +7,7 @@ env:
   NODE_ENV: developments
   NODE_OPTIONS: '--max-old-space-size=8192'
   NODE_VERSION: 20.11.1
-  PNPM_VERSION: 9.12.1
+  PNPM_VERSION: 10.24.0
 
 jobs:
   checks:

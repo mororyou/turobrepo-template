@@ -6,7 +6,10 @@
   "license": "ISC",
   "exports": {
     "./styles.css": "./dist/index.css",
-    "./*": "./dist/*.js"
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "import": "./dist/*.js"
+    }
   },
   "scripts": {
     "build": "pnpm build:styles && pnpm build:components",
