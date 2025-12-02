@@ -3,9 +3,9 @@
   "ui": "tui",
   "tasks": {
     "build": {
-      "dependsOn": ["build:styles", "build:components"],
+      "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
     },
     "build:styles": {
       "outputs": ["dist/**"]
