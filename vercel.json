@@ -1,0 +1,6 @@
+{
+  "buildCommand": "turbo run build --filter=@repo/client...",
+  "outputDirectory": ".next",
+  "installCommand": "pnpm install",
+  "framework": "nextjs"
+}
