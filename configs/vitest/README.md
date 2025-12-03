@@ -26,9 +26,12 @@ Turborepo用の共有Vitest設定パッケージです。
 import { defineConfig, mergeConfig } from 'vitest/config'
 import { baseConfig } from '@repo/vitest-config/base'
 
-export default mergeConfig(baseConfig, defineConfig({
-  // カスタム設定
-}))
+export default mergeConfig(
+  baseConfig,
+  defineConfig({
+    // カスタム設定
+  }),
+)
 ```
 
 ### React設定
@@ -40,9 +43,12 @@ jsdom環境を使用したReactプロジェクト用の設定：
 import { defineConfig, mergeConfig } from 'vitest/config'
 import { reactConfig } from '@repo/vitest-config/react'
 
-export default mergeConfig(reactConfig, defineConfig({
-  // カスタム設定
-}))
+export default mergeConfig(
+  reactConfig,
+  defineConfig({
+    // カスタム設定
+  }),
+)
 ```
 
 ### Node.js設定
@@ -54,9 +60,12 @@ Node.js環境を使用したサーバーサイド用の設定：
 import { defineConfig, mergeConfig } from 'vitest/config'
 import { nodeConfig } from '@repo/vitest-config/node'
 
-export default mergeConfig(nodeConfig, defineConfig({
-  // カスタム設定
-}))
+export default mergeConfig(
+  nodeConfig,
+  defineConfig({
+    // カスタム設定
+  }),
+)
 ```
 
 ### すべての設定をインポート
