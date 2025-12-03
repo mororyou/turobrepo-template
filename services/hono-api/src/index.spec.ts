@@ -7,9 +7,7 @@ describe('GET /', () => {
 
     expect(res.status).toBe(200)
 
-    const json = await res.json()
-
-    expect(json).toEqual({
+    expect(await res.json()).toEqual({
       message: 'Hello Hono!',
       sample: {
         name: 'John Doe',
