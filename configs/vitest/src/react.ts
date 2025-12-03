@@ -1,16 +1,18 @@
+import react from '@vitejs/plugin-react'
 import { defineConfig, mergeConfig } from 'vitest/config'
 import { baseConfig } from './base.js'
 
 /**
  * Vitest configuration for React projects.
- * Uses jsdom for DOM simulation.
+ * Uses happy-dom for DOM simulation.
  */
 export const reactConfig = mergeConfig(
   baseConfig,
   defineConfig({
+    plugins: [react()],
     test: {
-      // Use jsdom for React component testing
-      environment: 'jsdom',
+      // Use happy-dom for React component testing
+      environment: 'happy-dom',
 
       // Setup files for React testing
       setupFiles: [],

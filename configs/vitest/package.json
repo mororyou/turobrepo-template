@@ -16,12 +16,13 @@
     "clean": "rm -rf .turbo node_modules dist"
   },
   "dependencies": {
+    "@vitejs/plugin-react": "4.5.2",
     "vitest": "4.0.15"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
     "@vitest/coverage-v8": "4.0.15",
     "@vitest/ui": "4.0.15",
-    "jsdom": "27.2.0"
+    "happy-dom": "20.0.11"
   }
 }
