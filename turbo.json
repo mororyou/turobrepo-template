@@ -34,6 +34,22 @@
     },
     "clean": {
       "cache": false
+    },
+    "test": {
+      "cache": false,
+      "persistent": true
+    },
+    "test:watch": {
+      "cache": false,
+      "persistent": true
+    },
+    "test:ui": {
+      "cache": false,
+      "persistent": true
+    },
+    "test:coverage": {
+      "cache": false,
+      "persistent": true
     }
   }
 }
